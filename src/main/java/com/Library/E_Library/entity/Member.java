@@ -1,16 +1,15 @@
 package com.Library.E_Library.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
+@Builder
+@With
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member {
@@ -27,7 +26,7 @@ public class Member {
     @Enumerated(EnumType.STRING)
     private Status status;
 
-    private static enum Status{
+    public static enum Status{
         ACTIVE,
         INACTIVE
     }

@@ -70,4 +70,14 @@ public class BookServiceTest {
         Assertions.assertNull(book1);
 //        Assertions.assertEquals(null,book1);
     }
+
+    @Test
+    void addBook_whenBookIsPassed_sholudReturnAddedBook(){
+         Mockito.when(this.bookRepository.save(book)).thenReturn(book);
+
+         Book book1 = this.bookService.addBook(book);
+
+         Assertions.assertEquals(book,book1);
+    }
+
 }
