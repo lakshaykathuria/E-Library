@@ -1,0 +1,4 @@
+com/Library/E_Library/service/MyServiceTest.class
+com/Library/E_Library/service/BookServiceTest.class
+com/Library/E_Library/repository/BookRepositoryTest.class
+com/Library/E_Library/ELibraryApplicationTests.class
