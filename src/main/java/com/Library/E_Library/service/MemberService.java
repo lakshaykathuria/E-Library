@@ -15,7 +15,7 @@ import java.util.UUID;
 @Slf4j
 public class MemberService {
 
-    private MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     @Autowired
     public MemberService(MemberRepository memberRepository) {

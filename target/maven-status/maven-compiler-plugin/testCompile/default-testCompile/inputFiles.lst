@@ -1,4 +1,6 @@
 /home/lakshay/IdeaProjects/E-Library/src/test/java/com/Library/E_Library/ELibraryApplicationTests.java
+/home/lakshay/IdeaProjects/E-Library/src/test/java/com/Library/E_Library/controller/MemberControllerTest.java
 /home/lakshay/IdeaProjects/E-Library/src/test/java/com/Library/E_Library/repository/BookRepositoryTest.java
 /home/lakshay/IdeaProjects/E-Library/src/test/java/com/Library/E_Library/service/BookServiceTest.java
+/home/lakshay/IdeaProjects/E-Library/src/test/java/com/Library/E_Library/service/MemberServiceTest.java
 /home/lakshay/IdeaProjects/E-Library/src/test/java/com/Library/E_Library/service/MyServiceTest.java
