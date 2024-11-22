@@ -1,8 +1,10 @@
 package com.Library.E_Library.entity;
 
+import com.Library.E_Library.enums.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
+import net.minidev.json.annotate.JsonIgnore;
 import org.springframework.security.core.userdetails.User;
 
 import java.util.UUID;
@@ -25,8 +27,9 @@ public class Member {
     private String lastName;
 
     @Column(unique = true)
-    private String userName;
+    private String username;
 
+    @JsonIgnore
     private String password;
 
     private String role;

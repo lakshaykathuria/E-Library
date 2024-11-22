@@ -22,11 +22,7 @@ public class MemberController {
         this.memberService = memberService;
     }
 
-    @PostMapping("/add")
-    public ResponseEntity<Member> addMember (@RequestBody Member member){
-        Member savesMember = this.memberService.addMember(member);
-        return new ResponseEntity<>(savesMember, HttpStatus.CREATED);
-    }
+
 
     @GetMapping("/getall")
     public ResponseEntity<List<Member>> getAllMember(){
@@ -50,8 +46,4 @@ public class MemberController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-
-
-
-
 }

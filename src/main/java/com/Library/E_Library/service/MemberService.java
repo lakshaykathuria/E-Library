@@ -5,6 +5,7 @@ import com.Library.E_Library.repository.MemberRepository;
 import lombok.With;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,18 +17,14 @@ import java.util.UUID;
 public class MemberService {
 
     private final MemberRepository memberRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public MemberService(MemberRepository memberRepository) {
+    public MemberService(MemberRepository memberRepository, PasswordEncoder passwordEncoder) {
         this.memberRepository = memberRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
-    public Member addMember(Member member){
-        log.info("Adding a Member");
-        Member savedMember = this.memberRepository.save(member);
-        log.info("Member saved with id: {}",savedMember.getMemberId());
-        return savedMember;
-    }
 
     public List<Member> listAllMember(){
         return this.memberRepository.findAll();

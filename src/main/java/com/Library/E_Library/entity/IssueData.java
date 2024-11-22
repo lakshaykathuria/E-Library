@@ -1,6 +1,7 @@
 package com.Library.E_Library.entity;
 
 import com.Library.E_Library.enums.IssueStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIncludeProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -30,12 +31,14 @@ public class IssueData {
 
     @ManyToOne
     @NotNull
-    @JsonIncludeProperties({"id", "name", "author"})
+    @JsonIncludeProperties({"bookId", "bookName"})
     private Book book;
 
     @Builder.Default()
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Instant createdAt = Instant.now();
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Instant expirationDate;
 
     @NotNull
