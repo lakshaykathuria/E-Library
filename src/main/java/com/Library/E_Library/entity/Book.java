@@ -18,7 +18,7 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID bookId;
 
-
+    private String bookName;
 
     @Column(unique = true)
     private String isbn;
