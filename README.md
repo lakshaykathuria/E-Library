@@ -1,25 +1,25 @@
-# E-Library Project
+# 📚 E-Library Project
 
-## Overview
+## 📖 Overview
 
 The **E-Library** is a Spring Boot application designed to manage library operations, including book management, user authentication, and issue tracking. The application uses PostgreSQL as its database and Redis for caching.
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **Backend**: Java, Spring Boot
-- **Database**: PostgreSQL
-- **Caching**: Redis
-- **Security**: Spring Security, JWT Authentication
+- **Backend**: Java, Spring Boot 🚀
+- **Database**: PostgreSQL 🗄
+- **Caching**: Redis ⚡
+- **Security**: Spring Security 🔐, JWT Authentication 🏷
 
-## Features
+## ✨ Features
 
-- User authentication and role-based access control
-- CRUD operations for books, members, and issue tracking
-- JWT authentication for security
-- Redis caching for optimized performance
-- PostgreSQL database for persistent storage
+- ✅ User authentication and role-based access control
+- 📚 CRUD operations for books, members, and issue tracking
+- 🔑 JWT authentication for security
+- ⚡ Redis caching for optimized performance
+- 🗄 PostgreSQL database for persistent storage
 
-## Installation and Setup
+## 🏗 Installation and Setup
 
 1. **Clone the Repository**:
 
@@ -30,9 +30,9 @@ The **E-Library** is a Spring Boot application designed to manage library operat
 
 2. **Configure PostgreSQL**:
 
-   - Ensure PostgreSQL is installed and running
-   - Create a database `e_library`
-   - Update `application.properties` with database credentials
+   - Ensure PostgreSQL is installed and running 🏗
+   - Create a database `e_library` 📌
+   - Update `application.properties` with database credentials 📝
 
 3. **Run the Application**:
 
@@ -40,15 +40,16 @@ The **E-Library** is a Spring Boot application designed to manage library operat
    mvn spring-boot:run
    ```
 
-## Contribution
+## 🤝 Contribution
 
 Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to your fork and submit a pull request
+1. 🍴 Fork the repository
+2. 🌿 Create a feature branch
+3. ✍ Commit your changes
+4. 🚀 Push to your fork and submit a pull request
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License.
+
