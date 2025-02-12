@@ -1,57 +1,54 @@
-# 📚 E-Library System
+# E-Library Project
 
-![Java](https://img.shields.io/badge/Java-17-blue) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-green) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue) ![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)
+## Overview
 
-A modern **E-Library System** built with **Spring Boot** & **PostgreSQL**, offering user authentication, book management, and issue tracking.
+The **E-Library** is a Spring Boot application designed to manage library operations, including book management, user authentication, and issue tracking. The application uses PostgreSQL as its database and Redis for caching.
 
-## 🚀 Features
+## Tech Stack
 
-✅ JWT-based authentication  
-✅ Role-based access control (Admin & Member)  
-✅ CRUD operations for books & members  
-✅ Redis caching for better performance  
+- **Backend**: Java, Spring Boot
+- **Database**: PostgreSQL
+- **Caching**: Redis
+- **Security**: Spring Security, JWT Authentication
 
+## Features
 
-## 🛠️ Installation
+- User authentication and role-based access control
+- CRUD operations for books, members, and issue tracking
+- JWT authentication for security
+- Redis caching for optimized performance
+- PostgreSQL database for persistent storage
 
-```sh
-git clone https://github.com/yourusername/e-library.git
-cd e-library
-mvn clean install
-mvn spring-boot:run
-```
+## Installation and Setup
 
-## 🔥 API Endpoints
+1. **Clone the Repository**:
 
-### 📚 Get All Books
-```http
-GET /api/books
-```
+   ```sh
+   git clone https://github.com/lakshaykathuria/E-Library.git
+   cd E-Library
+   ```
 
-### ➕ Add a Book
-```http
-POST /api/books
-```
-**Body:**
-```json
-{
-  "title": "Spring Boot Guide",
-  "author": "John Doe",
-  "isbn": "1234567890"
-}
-```
+2. **Configure PostgreSQL**:
 
-## 🤝 Contribution Guidelines
+   - Ensure PostgreSQL is installed and running
+   - Create a database `e_library`
+   - Update `application.properties` with database credentials
 
-1. 🍴 Fork the project  
-2. Create a new branch (`feature-xyz`)  
-3. Commit changes (`git commit -m "Added new feature"`)  
-4. Push to your branch (`git push origin feature-xyz`)  
-5. 🚀 Create a Pull Request  
+3. **Run the Application**:
 
-## 📜 License
+   ```sh
+   mvn spring-boot:run
+   ```
 
-This project is **MIT Licensed**.
+## Contribution
 
----
+Contributions are welcome! Please follow these steps:
 
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your fork and submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
